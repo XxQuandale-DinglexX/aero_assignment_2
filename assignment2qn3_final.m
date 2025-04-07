@@ -21,7 +21,7 @@ beta = linspace(1e-5, pi-1e-5, n);
 x = (1 - cos(beta)) / 2;
 alpha_i = deg2rad(6);
 
-data = load('NACA4415.txt');
+data = load('NACA4415_Detailed.txt');
 alpha_data = data(:,1)*pi/180;
 Cl_data = data(:,2);
 M0 = gradient(Cl_data, alpha_data);
